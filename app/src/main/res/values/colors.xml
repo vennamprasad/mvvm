@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#f3f5f9</color>
+    <color name="darkgrey">#424242</color>
+
+
+    <!-->>>>>>>>>>>>>>> Light base colors <<<<<<<<<<<<<<<-->
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#F3F4F6</color>
+    <color name="colorAccent">#6DB432</color>
+
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#424343</color>
+    <color name="windowColor">#FFFFFF</color>
+    <color name="tabSelectedColor">#6DB432</color>
+    <color name="tabUnselectedColor">#424343</color>
+    <color name="navTabPressed">#000</color>
+    <color name="statusBarColor">#F3F4F6</color>
+    <color name="appBarColor">#F3F4F6</color>
+    <color name="backgroundColor">#FAFAFA</color>
+    <color name="cardDialogColor">#FFFFFF</color>
+    <color name="toastSnackBarColor">#212121</color>
+
+    <!-->>>>>>>>>>>>>>> Dark base colors <<<<<<<<<<<<<<<-->
+    <!-- #121212 -->
+    <!-- #1F1F1F -->
+
+    <!-- Others -->
+    <color name="colorRipple">#256DB432</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- COLOR For Rebuild -->
+    <color name="overlay_dark_50">#80000000</color>
+
+</resources>
