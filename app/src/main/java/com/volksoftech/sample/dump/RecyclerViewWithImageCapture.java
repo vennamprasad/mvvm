@@ -83,7 +83,6 @@ public class RecyclerViewWithImageCapture extends AppCompatActivity {
             }
             builder.setView(view);
             builder.setPositiveButton("Close", (dialogInterface, arg1) -> {
-                return;
             });
             builder.setCancelable(false);
             builder.create();
