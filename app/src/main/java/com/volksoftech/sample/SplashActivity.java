@@ -20,7 +20,6 @@ public class SplashActivity extends AppCompatActivity {
     PermissionListener permissionlistener = new PermissionListener() {
         @Override
         public void onPermissionGranted() {
-            Toast.makeText(SplashActivity.this, "Permission Granted", Toast.LENGTH_SHORT).show();
             Intent mainIntent = new Intent(SplashActivity.this, LoginActivity.class);
             startActivity(mainIntent);
             finish();
@@ -58,7 +57,7 @@ public class SplashActivity extends AppCompatActivity {
                             Manifest.permission.READ_PHONE_STATE,
                             Manifest.permission.ACCESS_NETWORK_STATE)
                     .check();
-        }, 2000);
+        }, 10000);
     }
 
     private void hideStatusBar() {

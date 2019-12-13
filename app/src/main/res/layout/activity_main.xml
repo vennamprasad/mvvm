@@ -6,47 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:tint="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675"
-        app:srcCompat="@drawable/iphone_x_100px" />
-
     <TextView
         android:id="@+id/textView"
-        style="@style/TextAppearance.AppCompat.Large"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:fontFamily="@font/alata_regular"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/google_sans_regular"
         android:text="@string/android_design_samples"
-        android:textColor="@color/colorAccent"
+        android:includeFontPadding="true"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="?attr/colorAccent"
+        android:textDirection="firstStrongLtr"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie_animation_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_text"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         app:lottie_autoPlay="true"
-        app:lottie_fileName="loading.json"
+        app:lottie_fileName="progress_bar.json"
         app:lottie_loop="true" />
 
     <TextView
@@ -54,8 +39,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/raleway_semibold"
+        android:layout_marginTop="200dp"
+        android:textColor="?attr/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lottie_animation_view" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

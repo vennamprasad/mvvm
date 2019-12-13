@@ -1,6 +1,5 @@
 package com.volksoftech.sample;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 
@@ -29,9 +28,8 @@ public class LoginActivity extends AppCompatActivity {
         binding.setLifecycleOwner(this);
 
         binding.setLoginViewModel(loginViewModel);
-
+        //validations and collecting data from ViewModel
         loginViewModel.getUser().observe(this, loginUser -> {
-
             if (TextUtils.isEmpty(Objects.requireNonNull(loginUser).getLoginId())) {
                 binding.eloginId.setError("Enter an E-Mail Address");
                 binding.eloginId.requestFocus();
@@ -45,16 +43,26 @@ public class LoginActivity extends AppCompatActivity {
                 binding.ePassword.setError("Enter at least 6 Digit password");
                 binding.ePassword.requestFocus();
             } else {
-                startActivity(new Intent(this, RecyclerViewWithImageCapture.class));
+                loginViewModel.startActivity(this, RecyclerViewWithImageCapture.class, false);
             }
 
         });
+        //handling intents
+        binding.linkSignup.setOnClickListener(view -> {
+            loginViewModel.startActivity(this, SignUpActivity.class, false);
+        });
+        binding.linkForgotpassword.setOnClickListener(view -> {
+            loginViewModel.startActivity(this, ResetPasswordActivity.class, false);
+        });
+        binding.backbtn.setOnClickListener(view -> {
+            finish();
+        });
+
     }
 
 
     @Override
     public void onBackPressed() {
-        // disable going back to the MainActivityStudent
         moveTaskToBack(true);
     }
 

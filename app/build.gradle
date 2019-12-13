@@ -64,12 +64,10 @@ dependencies {
     implementation project(':utils')
     // Circle Image View
     implementation 'com.mikhaellopez:circularimageview:3.2.0'
-
-    implementation 'androidx.room:room-runtime:2.1.0-alpha03'
-    annotationProcessor 'androidx.room:room-compiler:2.1.0-alpha03'
-
+    //Room Data
+    implementation 'androidx.room:room-runtime:2.2.2'
+    annotationProcessor 'androidx.room:room-compiler:2.2.2'
     // ViewModel and LiveData
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0-alpha01'
-    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.1.0-alpha01'
-
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.1.0"
 }
