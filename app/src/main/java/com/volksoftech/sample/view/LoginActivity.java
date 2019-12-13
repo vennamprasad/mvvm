@@ -1,4 +1,4 @@
-package com.volksoftech.sample;
+package com.volksoftech.sample.view;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -7,8 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.volksoftech.sample.MenuActivity;
+import com.volksoftech.sample.R;
 import com.volksoftech.sample.databinding.ActivityLoginBinding;
-import com.volksoftech.sample.dump.RecyclerViewWithImageCapture;
 import com.volksoftech.sample.viewmodel.LoginViewModel;
 
 import java.util.Objects;
@@ -43,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
                 binding.ePassword.setError("Enter at least 6 Digit password");
                 binding.ePassword.requestFocus();
             } else {
-                loginViewModel.startActivity(this, RecyclerViewWithImageCapture.class, false);
+                loginViewModel.startActivity(this, MenuActivity.class, false);
             }
 
         });

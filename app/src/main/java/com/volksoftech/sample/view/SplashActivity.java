@@ -1,4 +1,4 @@
-package com.volksoftech.sample;
+package com.volksoftech.sample.view;
 
 import android.Manifest;
 import android.content.Intent;
@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
+import com.volksoftech.sample.MenuActivity;
+import com.volksoftech.sample.R;
 
 import java.util.List;
 
@@ -20,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
     PermissionListener permissionlistener = new PermissionListener() {
         @Override
         public void onPermissionGranted() {
-            Intent mainIntent = new Intent(SplashActivity.this, LoginActivity.class);
+            Intent mainIntent = new Intent(SplashActivity.this, MenuActivity.class);
             startActivity(mainIntent);
             finish();
         }
@@ -57,7 +59,7 @@ public class SplashActivity extends AppCompatActivity {
                             Manifest.permission.READ_PHONE_STATE,
                             Manifest.permission.ACCESS_NETWORK_STATE)
                     .check();
-        }, 10000);
+        }, 6000);
     }
 
     private void hideStatusBar() {

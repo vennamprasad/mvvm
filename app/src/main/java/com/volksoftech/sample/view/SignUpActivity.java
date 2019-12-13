@@ -1,4 +1,4 @@
-package com.volksoftech.sample;
+package com.volksoftech.sample.view;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.volksoftech.sample.R;
 import com.volksoftech.sample.databinding.ActivitySignUpBinding;
 import com.volksoftech.sample.viewmodel.SignUpViewModel;
 

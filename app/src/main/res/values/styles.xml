@@ -21,10 +21,11 @@
         <item name="colorControlHighlight">@color/overlay_dark_50</item> <!-- Ripple color -->
         <item name="android:windowBackground">@color/windowColor</item>
         <item name="android:fontFamily">@font/raleway</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:navigationBarColor">#000</item> <!-- Bottom nav bar color -->
-        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:navigationBarColor">#000</item>
+        <!-- Bottom nav bar color -->
+        <item name="android:windowContentTransitions">false</item>
         <!-- For view transition between activities -->
         <!--        <item name="android:windowActivityTransitions">true</item>-->
         <!--        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>-->
@@ -35,5 +36,14 @@
         <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
         <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
+
+    <style name="MyApp.Primary.Base.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyApp.Primary.Base.Light.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyApp.Primary.Base.Light.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

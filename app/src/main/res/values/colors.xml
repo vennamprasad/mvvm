@@ -31,5 +31,5 @@
 
     <!-- COLOR For Rebuild -->
     <color name="overlay_dark_50">#80000000</color>
-
+    <color name="comment_light_background">#d6d6d6</color>
 </resources>
